@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8" />
 
+    <!-- CSSの読み込み -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.2/dist/css/autoComplete.min.css"
     />
   </head>
   <body>
+    <!-- 対象の入力欄を設置、ラッパーを置くと後のデザイン上便利 -->
     <div style="position: relative; width: 370px; margin: auto">
       <input id="autoComplete" tabindex="1" />
     </div>
@@ -20,12 +22,16 @@
       選択した結果がここに代入されます
     </div>
 
+    <!-- スクリプトを配置 -->
     <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.2/dist/js/autoComplete.min.js"></script>
     <script>
       new autoComplete({
+        // 対象となる入力欄の指定
         selector: "#autoComplete",
         placeHolder: "「a」を入力...",
         minChars: 1,
+
+        // ローカル定義をソースとして使用
         data: {
           src: [
             { Ticker: "AAPL", Name: "Apple Inc." },
@@ -56,7 +62,9 @@
           event: ["input", "focus"],
         },
         resultItem: {
+          // オートコンプリートの候補に対する処理
           content: (data, element) => {
+            // 候補がdataとして渡される
             console.log(data.value.Name);
 
             element.style = "display: flex; justify-content: space-between;";
@@ -84,6 +92,7 @@
         feedback: (data) => {
           console.log(data);
         },
+        // 候補を選択した場合の処理
         onSelection: (feedback) => {
           console.log(feedback);
 
