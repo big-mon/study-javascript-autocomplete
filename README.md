@@ -11,4 +11,4 @@
 
 **ローカル JSON をソースとしたオートコンプリート機能**
 
-[https://big-mon.github.io/study-javascript-autocomplete/](https://big-mon.github.io/study-javascript-autocomplete/)
+[https://big-mon.github.io/study-javascript-autocomplete/demo1/](https://big-mon.github.io/study-javascript-autocomplete/demo1/)

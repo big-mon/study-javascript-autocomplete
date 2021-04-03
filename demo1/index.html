@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>autoComplete.js - ローカルのJSONをデータソースとする実装</title>
+
+    <!-- CSSの読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.2/dist/css/autoComplete.min.css"
+    />
+  </head>
+  <body style="padding: 2rem">
+    <!-- 対象の入力欄を設置、ラッパーを置くと後のデザイン上便利 -->
+    <div style="position: relative; width: 370px; margin: auto">
+      <input id="autoComplete" tabindex="1" />
+    </div>
+
+    <div
+      class="selection"
+      style="width: 370px; margin: 2rem auto; text-align: center"
+    >
+      選択した結果がここに代入されます
+    </div>
+
+    <p><a href="../index.html">戻る</a></p>
+
+    <!-- スクリプトを配置 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.2/dist/js/autoComplete.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
