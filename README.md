@@ -9,10 +9,7 @@
 
 ## DEMO
 
-**ローカル JSON をソースとしたオートコンプリート機能**
+[DEMO](https://big-mon.github.io/study-javascript-autocomplete/)
 
-[DEMO1](https://big-mon.github.io/study-javascript-autocomplete/demo1/)
-
-**外部 JSON をソースとしたオートコンプリート機能**
-
-[DEMO2](https://big-mon.github.io/study-javascript-autocomplete/demo2/)
+- **ローカル JSON をソースとしたオートコンプリート機能**
+- **外部 JSON をソースとしたオートコンプリート機能**
